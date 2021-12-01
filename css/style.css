@@ -312,6 +312,7 @@ nav .navbar .nav-list ul li:hover a{
 }
 #gallery figure img{
     width: 100%;
+	height: 100%;
 }
 #gallery figure figcaption{
     width: 100%;
@@ -338,4 +339,59 @@ nav .navbar .nav-list ul li:hover a{
 }
 /* =========================
     Gallery Ends
+========================= */
+
+
+/* =========================
+    Team Starts
+========================= */
+#team{
+    height: 570px;
+    padding: 100px 0;
+}
+#team .members{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#team .members .member{
+    height: 100%;
+    width: 270px;
+}
+#team .members .member img{
+    width: 100%;
+}
+#team .members .member p:first-of-type{
+    margin: 25px 0 10px 0;
+}
+#team .members .member p:nth-of-type(2){
+    
+}
+#team .members .member p:nth-of-type(3){
+    line-height: 21px;
+    margin: 24px 0;
+    padding-right: 5px;
+}
+#team .members .member ul{
+    display: flex;
+}
+#team .members .member ul li:nth-of-type(2){
+    margin: 0 5px;
+}
+#team .members .member ul li a{
+    padding: 10px 12px;
+    color: #c6cacc;
+    border: 1px solid #e8ecee;
+    box-sizing: border-box;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+#team .members .member ul li a:hover{
+    background: #e84545;
+}
+/* =========================
+    Team Ends
 ========================= */
