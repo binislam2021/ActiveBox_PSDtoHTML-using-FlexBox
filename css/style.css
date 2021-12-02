@@ -123,7 +123,7 @@ img{
 .text-up{
     text-transform: uppercase;
 }
-.text1-up{
+.text1-up::first-letter{
     text-transform: uppercase;
 }
 .text-cap{
@@ -364,9 +364,6 @@ nav .navbar .nav-list ul li:hover a{
 #team .members .member p:first-of-type{
     margin: 25px 0 10px 0;
 }
-#team .members .member p:nth-of-type(2){
-    
-}
 #team .members .member p:nth-of-type(3){
     line-height: 21px;
     margin: 24px 0;
@@ -394,4 +391,45 @@ nav .navbar .nav-list ul li:hover a{
 }
 /* =========================
     Team Ends
+========================= */
+
+
+/* =========================
+    Feedback Starts
+========================= */
+#testimonials{
+    height: 500px;
+    display: flex;
+}
+#testimonials .photo{
+    height: 100%;
+    width: 50%;
+}
+#testimonials .photo img{
+    width: 100%;
+    height: 100%;
+}
+#testimonials .txt{
+    height: 100%;
+    width: 50%;
+    padding: 110px 305px 0 85px;
+    box-sizing: border-box;
+}
+#testimonials .txt p:first-of-type{
+    line-height: 42px;
+}
+#testimonials .txt p:last-of-type{
+    padding: 20px 0 60px 0;
+}
+#testimonials .txt ul{
+    padding-left: 200px;
+}
+#testimonials .txt ul li i{
+ opacity: 0.2;
+}
+#testimonials .txt ul li i:nth-of-type(2){
+    opacity: 1;
+}
+/* =========================
+    Feedback Ends
 ========================= */
