@@ -61,14 +61,6 @@ img{
     font-family: var(--ff1);
     font-weight: 700;
 }
-.rale-semi{
-    font-family: var(--ff1);
-    font-weight: 600;
-}
-.rale-bold{
-    font-family: var(--ff1);
-    font-weight: 700;
-}
 
 /* Open-sans */
 
@@ -88,13 +80,9 @@ img{
     font-weight: 400;
     font-style: italic;
 }
-/* ======================
-    Font CSS Ends
-====================== */
 
-/* =========================
-    Font Size CSS Starts
-========================= */
+/* Font Size */
+
 .fs-13{
     font-size: 13px;
 }
@@ -113,9 +101,10 @@ img{
 .fs-65{
     font-size: 65px;
 }
-/* =========================
-    Font Size CSS Ends
-========================= */
+/* ======================
+    Font CSS Ends
+====================== */
+
 
 /* =========================
     Typography CSS Starts
@@ -128,6 +117,9 @@ img{
 }
 .text-cap{
     text-transform: capitalize;
+}
+.text-low{
+    text-transform: lowercase;
 }
 .text-center{
     text-align: center;
@@ -145,6 +137,9 @@ img{
 }
 .brand{
     color: var(--brand);
+}
+.bg-test{
+    background: var(--bg-test);
 }
 .white{
     color: #ffffff
@@ -193,6 +188,7 @@ nav .navbar .nav-list ul{
     justify-content: space-between;
     height: 100px;
     align-items: center;
+    /* এখানে হাইট নির্ধারণ করে এলাইন আইটেম না  করে সরাসরি লাইন হাইট দিয়ে দিলেও তো কাজ চলে, তাহলে এক লাইন বেশি কেনো লিখবো স্যার? */
 }
 nav .navbar .nav-list ul li a{
     transition: all linear 0.4s;
@@ -249,11 +245,12 @@ nav .navbar .nav-list ul li:hover a{
     -moz-transition: all linear 0.4s;
     -ms-transition: all linear 0.4s;
     -o-transition: all linear 0.4s;
+    border: 1px solid var(--brand);
 }
 #banner .banner-text a:hover{
-    padding: 0 52px;
     background: #fff;
     color: var(--brand);
+    border: 1px solid var(--brand);
 }
 /* =========================
     Banner Ends
@@ -312,7 +309,7 @@ nav .navbar .nav-list ul li:hover a{
 }
 #gallery figure img{
     width: 100%;
-	height: 100%;
+    height: 100%;
 }
 #gallery figure figcaption{
     width: 100%;
@@ -364,6 +361,9 @@ nav .navbar .nav-list ul li:hover a{
 #team .members .member p:first-of-type{
     margin: 25px 0 10px 0;
 }
+#team .members .member p:nth-of-type(2){
+    
+}
 #team .members .member p:nth-of-type(3){
     line-height: 21px;
     margin: 24px 0;
@@ -412,7 +412,7 @@ nav .navbar .nav-list ul li:hover a{
 #testimonials .txt{
     height: 100%;
     width: 50%;
-    padding: 110px 305px 0 85px;
+    padding: 110px 85px 0 85px;
     box-sizing: border-box;
 }
 #testimonials .txt p:first-of-type{
@@ -432,4 +432,40 @@ nav .navbar .nav-list ul li:hover a{
 }
 /* =========================
     Feedback Ends
+========================= */
+
+
+/* =========================
+    Download Starts
+========================= */
+#download{
+    height: 340px;
+    display: flex;
+    align-items: center;
+}
+#download .download{
+    height: 140px;
+}
+#download .download .detail{
+    text-align: center;
+}
+#download p:last-of-type{
+    margin: 12px 0 35px 0;
+}
+#download a{
+    padding: 0 80px;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    border: 1px solid var(--brand);
+}
+#download a:hover{
+    background: #fff;
+    color: var(--brand);
+    border: 1px solid var(--brand);
+}
+/* =========================
+    Download Ends
 ========================= */
